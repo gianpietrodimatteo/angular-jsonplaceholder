@@ -8,9 +8,9 @@ import { PostsTableDataSource, PostsTableItem } from './posts-table-datasource';
   styleUrls: ['./posts-table.component.scss']
 })
 export class PostsTableComponent implements AfterViewInit, OnInit {
-  @ViewChild(MatPaginator, {static: false}) paginator: MatPaginator;
-  @ViewChild(MatSort, {static: false}) sort: MatSort;
-  @ViewChild(MatTable, {static: false}) table: MatTable<PostsTableItem>;
+  @ViewChild(MatPaginator) paginator: MatPaginator;
+  @ViewChild(MatSort) sort: MatSort;
+  @ViewChild(MatTable) table: MatTable<PostsTableItem>;
   dataSource: PostsTableDataSource;
 
   /** Columns displayed in the table. Columns IDs can be added, removed, or reordered. */

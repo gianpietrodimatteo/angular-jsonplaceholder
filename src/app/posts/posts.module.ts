@@ -14,6 +14,7 @@ import { MatTableModule, MatPaginatorModule, MatSortModule } from '@angular/mate
     MatPaginatorModule,
     MatSortModule
   ],
-  declarations: [PostsListComponent, PostsTableComponent]
+  declarations: [PostsListComponent, PostsTableComponent],
+  exports: [PostsListComponent, PostsTableComponent]
 })
 export class PostsModule { }
